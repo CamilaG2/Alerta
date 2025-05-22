@@ -24,22 +24,19 @@ El sistema usa redes neuronales profundas para analizar videos reales y generar 
 
 ## 🗂️ Estructura del proyecto
 
-├── app.py # Interfaz web principal (Streamlit)
-├── run_pipeline.py # Script que ejecuta todo el pipeline completo
-├── requirements.txt # Dependencias necesarias
-├── .gitignore # Archivos a ignorar
-├── src/
-│ ├── alerts.py # Clasificación y alertas por frame
-│ ├── classify.py # Entrenamiento del clasificador
-│ ├── comparar_alertas.py # Comparación entre detección y clasificación
-│ ├── detector.py # Detección con YOLO
-│ ├── download.py # Descarga de videos desde TikTok
-│ ├── frames.py # Extracción de frames por lote
-│ └── utils.py # Extracción de frames desde un video individual
-└── data/
-├── clasificador/ # Dataset personalizado (imagenes por clase)
-├── frames_app/ # Frames usados en la app
-└── ... # (otras carpetas se crean automáticamente)
+├── app.py               # Interfaz web en Streamlit
+├── run_pipeline.py      # Ejecuta todo el flujo automáticamente
+├── requirements.txt     # Librerías necesarias
+├── README.md            # Este archivo
+└── src/
+    ├── alerts.py
+    ├── classify.py
+    ├── comparar_alertas.py
+    ├── detector.py
+    ├── download.py
+    ├── frames.py
+    └── utils.py
+
 
 ---
 
@@ -47,7 +44,6 @@ El sistema usa redes neuronales profundas para analizar videos reales y generar 
 
 1. Clona el repositorio:
 
-```bash
 git clone https://github.com/CamilaG2/Alerta.git
 cd Alerta
 python -m venv venv
@@ -84,10 +80,7 @@ Este es el orden recomendado para ejecutar el sistema completo desde cero:
    ```bash
    python run_pipeline.py
 
----
 
-## 🚀 Ejecución local
-streamlit run app.py
 ---
 
 ## 🔍 Tecnologías utilizadas
