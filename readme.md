@@ -24,21 +24,33 @@ El sistema usa redes neuronales profundas para analizar videos reales y generar 
 
 ## 🗂️ Estructura del proyecto
 ```
-├── app.py               # Interfaz web en Streamlit
-├── run_pipeline.py      # Ejecuta todo el flujo automáticamente
-├── requirements.txt     # Librerías necesarias
-├── README.md            # Este archivo
-└── src/
-    ├── alerts.py
-    ├── classify.py
-    ├── comparar_alertas.py
-    ├── detector.py
-    ├── download.py
-    ├── frames.py
-    └── utils.py
+BogotaWatcher/
+├── app.py                 # Interfaz web local con Streamlit
+├── app_gradio.py         # Interfaz web desplegable en Hugging Face con Gradio
+├── run_pipeline.py       # Ejecuta el pipeline completo
+├── requirements.txt      # Dependencias necesarias
+├── README.md             # Este archivo
+├── modelo_clasificador.h5
+├── yolov8n.pt
+├── src/
+│   ├── alerts.py
+│   ├── classify.py
+│   ├── comparar_alertas.py
+│   ├── detector.py
+│   ├── download.py
+│   ├── frames.py
+│   └── utils.py
+
 ```
 
 ---
+
+## 🧾 ¿Cómo se puede usar?
+| Método          | Herramienta | Ideal para         |
+| --------------- | ----------- | ------------------ |
+| `app.py`        | Streamlit   | Ejecución local 📍 |
+| `app_gradio.py` | Gradio      | Publicar en web 🌐 |
+
 
 ## 🛠️ Instalación
 
@@ -84,13 +96,17 @@ Este es el orden recomendado para ejecutar el sistema completo desde cero:
 ---
 
 ## 🔍 Tecnologías utilizadas
-Librería	¿Para qué se usa?
-streamlit	Interfaz web para cargar y visualizar resultados
-tensorflow	Clasificador de escenas con MobileNetV2
-ultralytics	Detección de personas con YOLOv8
-opencv-python	Extracción de frames desde videos
-Pillow	Procesamiento de imágenes
-numpy	Arreglos y datos numéricos
+
+| Librería        | ¿Para qué se usa?                         |
+| --------------- | ----------------------------------------- |
+| `tensorflow`    | Clasificador de escenas con MobileNetV2   |
+| `ultralytics`   | Detección de personas con YOLOv8          |
+| `opencv-python` | Extracción de frames desde videos         |
+| `gradio`        | Interfaz para la web en Hugging Face      |
+| `streamlit`     | Interfaz local para pruebas               |
+| `Pillow`        | Procesamiento y visualización de imágenes |
+| `numpy`         | Cálculos y manipulación de arrays         |
+
 
 ---
 
@@ -100,6 +116,6 @@ Los videos utilizados fueron descargados desde cuentas públicas de TikTok enfoc
 ---
 
 ## 📬 Autoría
-Camila Garcia
-Universidad del Rosario
+Camila Garcia\\
+Universidad del Rosario\\
 Mayo 2025
