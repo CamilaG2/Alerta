@@ -1,8 +1,6 @@
-| **Paquete**           | **¿Para qué se usa en el proyecto?**                                                                |
-| --------------------- | --------------------------------------------------------------------------------------------------- |
-| `streamlit`           | Para crear la interfaz web de la app donde se sube y analiza el video                               |
-| `tensorflow==2.19.0`  | Para cargar y ejecutar el modelo de clasificación basado en MobileNetV2                             |
-| `opencv-python`       | Para leer los videos `.mp4`, extraer los frames y guardarlos como imágenes                          |
-| `ultralytics==8.0.20` | Para usar el modelo YOLOv8 preentrenado, que detecta personas y objetos en los frames               |
-| `Pillow`              | Para trabajar con imágenes (usado en la carga de imágenes por `tensorflow.keras.preprocessing`)     |
-| `numpy`               | Para el manejo de datos numéricos y arreglos, base de muchos procesos del modelo y las predicciones |
+streamlit
+tensorflow-cpu==2.12.0
+ultralytics==8.0.145
+opencv-python-headless
+numpy
+Pillow
