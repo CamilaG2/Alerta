@@ -23,7 +23,7 @@ El sistema usa redes neuronales profundas para analizar videos reales y generar 
 ---
 
 ## 🗂️ Estructura del proyecto
-
+```
 ├── app.py               # Interfaz web en Streamlit
 ├── run_pipeline.py      # Ejecuta todo el flujo automáticamente
 ├── requirements.txt     # Librerías necesarias
@@ -36,7 +36,7 @@ El sistema usa redes neuronales profundas para analizar videos reales y generar 
     ├── download.py
     ├── frames.py
     └── utils.py
-
+```
 
 ---
 
