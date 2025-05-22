@@ -1,7 +1,6 @@
-streamlit
-tensorflow
-torch==2.0.1
+gradio==4.16.0
+tensorflow-cpu==2.12.0
 ultralytics==8.0.145
-opencv-python-headless==4.8.0.76
-numpy
+opencv-python-headless
 Pillow
+numpy
