@@ -65,13 +65,13 @@ Se recomienda crear una carpeta llamada data y dentro de ella una llamada raw, e
 ## 🛠️ Instalación
 
 1. Clona el repositorio:
-
+```bash
 git clone https://github.com/CamilaG2/Alerta.git
 cd Alerta
 python -m venv venv
 venv\Scripts\activate      # En Windows
 pip install -r requirements.txt
-
+```
 ---
 
 ## 🔄 Flujo del proyecto
