@@ -5,6 +5,7 @@ import os
 from pathlib import Path
 
 # Esta función carga el modelo entrenado desde un archivo .h5
+
 def cargar_modelo(modelo_path="modelo_clasificador.h5"):
     return tf.keras.models.load_model(modelo_path)
 

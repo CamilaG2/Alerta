@@ -25,13 +25,16 @@ El sistema usa redes neuronales profundas para analizar videos reales y generar 
 ## 🗂️ Estructura del proyecto
 ```
 BogotaWatcher/
-├── app.py                 # Interfaz web local con Streamlit
-├── app_gradio.py         # Interfaz web desplegable en Hugging Face con Gradio
-├── run_pipeline.py       # Ejecuta el pipeline completo
-├── requirements.txt      # Dependencias necesarias
-├── README.md             # Este archivo
-├── modelo_clasificador.h5
-├── yolov8n.pt
+├── data/
+│   ├── raw/           # Aca se almacenará los videos generados del doc download.py
+│   ├── frames/        # Acá se almacenarán los frames extraidos generados por el doc frames.py
+│   ├── clasificador/  # En esta carpeta se encontrará una clasificacion inicial reliazada
+│       ├── aglomeracion/
+│       ├── inundacion/
+│       ├── robo/
+│       ├── trancon/
+│   ├── frames_app/    # Esta carpeta se generará al utilizar la app
+│   ├── detecciones/   # Esta carpeta se generará al correr detector.py
 ├── src/
 │   ├── alerts.py
 │   ├── classify.py
@@ -40,8 +43,17 @@ BogotaWatcher/
 │   ├── download.py
 │   ├── frames.py
 │   └── utils.py
+├── app.py                 # Interfaz web local con Streamlit
+├── run_pipeline.py       # Ejecuta el pipeline completo
+├── requirements.txt      # Dependencias necesarias
+├── README.md             # Este archivo
+├── modelo_clasificador.h5 # Este se crea al correr el archivo classify.py
+├── yolov8n.pt
+
 
 ```
+
+Se recomienda crear una carpeta llamada data y dentro de ella una llamada raw, esto con el objetivo de guardar lo generado en el archivo download.py y otra llamada frames para guardar lo generado en el archivo frames.py. Adicionalmente, para poder entrenar bien el modelo se recomienda usar la carpeta clasificador ya que en esta se encuentran 4 carpetas que contienen la base para entrenar el modelo.
 
 ---
 
@@ -49,7 +61,6 @@ BogotaWatcher/
 | Método          | Herramienta | Ideal para         |
 | --------------- | ----------- | ------------------ |
 | `app.py`        | Streamlit   | Ejecución local 📍 |
-| `app_gradio.py` | Gradio      | Publicar en web 🌐 |
 
 
 ## 🛠️ Instalación

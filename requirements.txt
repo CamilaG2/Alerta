@@ -1,6 +1,6 @@
-gradio==4.16.0
-tensorflow-cpu==2.12.0
-ultralytics==8.0.145
-opencv-python-headless
-Pillow
-numpy
+streamlit==1.33.0
+tensorflow==2.12.0
+ultralytics==8.0.20
+opencv-python==4.7.0.72
+Pillow==9.5.0
+numpy==1.23.5
