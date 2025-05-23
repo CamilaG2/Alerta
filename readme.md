@@ -72,6 +72,11 @@ python -m venv venv
 venv\Scripts\activate      # En Windows
 pip install -r requirements.txt
 ```
+   Si hay un error al activar el entorno, correr el siguiente comando:
+   ```bash
+   Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+   ```
+   Después de esto, seguir con los la activación del entorno.
 ---
 
 ## 🔄 Flujo del proyecto
