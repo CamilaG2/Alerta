@@ -62,7 +62,6 @@ Se recomienda crear una carpeta llamada data y dentro de ella una llamada raw, e
 | --------------- | ----------- | ------------------ |
 | `app.py`        | Streamlit   | Ejecución local 📍 |
 
-
 ## 🛠️ Instalación
 
 1. Clona el repositorio:
@@ -103,7 +102,10 @@ Este es el orden recomendado para ejecutar el sistema completo desde cero:
    ```bash
    python run_pipeline.py
 
-
+7. Para tener una visión más clara de lo que realiza el proyecto, desde el entorno visual que se activo anteriormente se puede correr:
+   ```bash
+   streamlit run app.py
+Esto abrirá una url en donde se podrán cargar los videos que se quieren analizar.
 ---
 
 ## 🔍 Tecnologías utilizadas
